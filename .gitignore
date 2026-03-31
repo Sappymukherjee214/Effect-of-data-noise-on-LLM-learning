@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.gemini/
+.env
+experiments/*.png
+experiments/*.txt
+kagglehub/
+*.safetensors
+*.bin
+*.pt
+*.pth
+.ipynb_checkpoints/
+node_modules/
+dist/
+.vscode/
+.idea/
