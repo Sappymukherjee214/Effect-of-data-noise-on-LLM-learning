@@ -44,7 +44,7 @@ We utilize **Linear CKA** to measure the similarity between "Clean" and "Noisy" 
 - **Mathematical Bound**: $CKA(K, L) = \frac{HSIC(K, L)}{\sqrt{HSIC(K, K) \cdot HSIC(L, L)}}$.
 - **Insight**: This identifies the "Most Vulnerable Layer" (MVL) by showing where the latent features of a noisy sentence start to diverge from the clean manifold.
 
-![Layer-wise Noise Propagation Map](file:///d:/Effect%20of%20Data%20Noise%20on%20LLM%20Learning/experiments/noise_propagation_map.png)
+![Layer-wise Noise Propagation Map](experiments/noise_propagation_map.png)
 
 ### 3. Adversarial Probing (FGSM)
 
@@ -74,19 +74,19 @@ We selected these datasets specifically for their contrasting noise profiles:
 
 This module calculates the **Intrinsic Dimension (ID)** and generates **Representation Sensitivity Maps**. It compares how different noise levels "shred" the manifold.
 
-![Representation Displacement (UMAP)](file:///d:/Effect%20of%20Data%20Noise%20on%20LLM%20Learning/experiments/representation_displacement.png)
+![Representation Displacement (UMAP)](experiments/representation_displacement.png)
 
 ### Pillar 2: Multimodal Robustness (`multimodal_research.py`)
 
 Using **OpenAI’s CLIP**, we analyze the **Alignment Breakpoint**. We study how **Visual Noise** (Gaussian/Salt-and-Pepper) cross-correlate with **Text Noise** to destroy image-retrieval performance.
 
-![Multimodal Alignment Decay Curve](file:///d:/Effect%20of%20Data%20Noise%20on%20LLM%20Learning/experiments/multimodal_alignment_decay.png)
+![Multimodal Alignment Decay Curve](experiments/multimodal_alignment_decay.png)
 
 ### Pillar 3: Uncertainty Calibration (`uncertainty_calibration.py`)
 
 We implement **MC Dropout** and **Predictive Entropy**. High variance across dropout samples reveals "Epistemic Uncertainty," allowing us to detect noisy data points during inference.
 
-![Uncertainty Scaling under Noise](file:///d:/Effect%20of%20Data%20Noise%20on%20LLM%20Learning/experiments/uncertainty_scaling.png)
+![Uncertainty Scaling under Noise](experiments/uncertainty_scaling.png)
 
 ---
 

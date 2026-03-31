@@ -2,8 +2,8 @@ __pycache__/
 *.pyc
 .gemini/
 .env
-experiments/*.png
-experiments/*.txt
+# experiments/*.png
+# experiments/*.txt
 kagglehub/
 *.safetensors
 *.bin
