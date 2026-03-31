@@ -149,14 +149,15 @@ python multimodal_research.py
 
 ---
 
-## 📖 Citation & Academic Contributions
+## 🚀 Future Directions & Scalability
 
-This framework is built for **Tier-1 Industrial R&D labs** and **Premier Academic Institutions (IITs/IISc)**. Our core contributions include:
+This repository acts as a foundation for advanced robustness research. Planned future extensions include:
 
-- The **Manifold Saturation** hypothesis for LLM noise propagation.
-- The **Filtering Horizon** diagnostic for Transformer architecture robustness.
-- The first implementation of **Intrinsic Dimension Tracking** for language model hidden state drift.
+- **Denoising Fine-tuning**: Training models to "re-stiffen" their semantic manifolds against stochastic noise during pre-training.
+- **Cross-Architectural Benchmarking**: Comparing the "Filtering Horizon" of **Mamba (SSM)** and **Transformer** models under identical noise regimes.
+- **Automated Noise-Filtering Probes**: Implementing a real-time module that dynamically filters noisy tokens before they reach the attention layers using **Intrinsic Dimension** thresholds.
+- **Large-Scale Multi-Modal Expansion**: Investigating "Cross-Modal Infection" in massive VISION-TRANSFORMER (ViT) and Stable Diffusion latent spaces.
 
 ---
 
-### Developed for Advanced Representation Learning Research - (C) 2026
+Project maintained for Robust AI & Advanced Representation Learning Research - (C) 2026
